@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Greedy Seedy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div id="outer-container">
+    <div id="container">
+        <div id="border-strip"></div>
+        <div id="screens" class="montserrat">
+			<img class="trident-logo" src="trident.png" alt="gum">
+            <div id="screen01" class="screen special-screen">
+				<img class="tt" src="tt.png" alt="type">
+				 <div class="buttons-container">
+				 <a class="game-button" href="#" onclick="showScreen('screen02')">welcome to the watermelon world</a>
+                </div>
+            </div>
+
+            <div id="screen02" class="screen" alt = "screen02" style="display: none;">
+                <h1 id="scoreDisplay" style="position: absolute; right: 50px; top: 20px;">Score: 0</h1>
+                <div id="goodLuckMessage" style="display: none;"><h1>Good luck!</h1></div>
+                <div id="gameArea">
+                    <img id="basket" src="basket.png" alt="Basket">
+                    <img id="seed" src="seed.png" alt="Seed" style="display: none;">
+                </div>
+            </div>
+
+            <div id="gameOverScreen" class="screen" style="display:none;">
+                <h1>Game Over</h1>
+                <h1>Your final score: <span id="finalScore">0</span></h1>
+                <div class="buttons-container">
+                    <a class="game-button" href="#" onclick="showScreen('screen02')">Restart</a>
+                </div>
+            </div>
+        </div>
+		 <audio id="collectingSound" src="collectingsound.mp3"></audio>
+		 <audio id="lostSound" src="lost.mp3"></audio>
+    </div>
+	</div>
+    <script src="script.js"></script>
+	
+</body>
+</html>
